@@ -29,7 +29,7 @@ public class ParametersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.menu_layout);
         Log.d(TAG, "onCreate: Starting.");
         mSectionsPageAdapter = new SectionsParametersAdapter(getSupportFragmentManager());
         // Set up the ViewPager with the sections adapter.
@@ -114,7 +114,7 @@ public class ParametersActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsParametersAdapter adapter = new SectionsParametersAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragDifficulte(), "Difficulté");
+        adapter.addFragment(new FragDifficulties(), "Difficulté");
         adapter.addFragment(new FragOptions(), "Options");
 
         viewPager.setAdapter(adapter);

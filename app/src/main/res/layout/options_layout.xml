@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".FragOptions">
+
+    <Button
+        android:id="@+id/diff"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficulty_FR"/>
+
+    <Button
+        android:id="@+id/reglage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/diff"
+        android:text="@string/reglage_FR"/>
+
+    <TextView
+        android:id="@+id/tMusique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_FR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reglage"/>
+
+    <SeekBar
+        android:id="@+id/seekVolume"
+        android:paddingTop="19dp"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tMusique"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-3dp"/>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_below="@+id/tMusique"
+        android:layout_toRightOf="@+id/seekVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tLuminosite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Luminosite_FR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toggle" />
+
+    <SeekBar
+        android:id="@+id/seekLumi"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tLuminosite"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Theme_FR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekLumi"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTheme"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/T1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/Theme1_FR"/>
+
+        <RadioButton
+            android:id="@+id/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/Theme2_FR"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tLangue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Langue_FR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tLangue"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/FR"/>
+
+        <RadioButton
+            android:id="@+id/en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/EN"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>
