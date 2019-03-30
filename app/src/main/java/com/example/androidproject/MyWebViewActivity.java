@@ -14,8 +14,8 @@ public class MyWebViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webview_layout);
 
-        String url= getIntent().getStringExtra("url");
-        webview= (WebView) findViewById(R.id.webview);
+        String url = getIntent().getStringExtra("url");
+        webview = (WebView) findViewById(R.id.webview);
         webview.setWebViewClient(new WebViewClient());
         WebSettings websettings= webview.getSettings();
         websettings.setJavaScriptEnabled(true);

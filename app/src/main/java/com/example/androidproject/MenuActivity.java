@@ -41,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), QCMActivity.class);
+                Intent intent = new Intent(getApplicationContext(), QcmActivity.class);
                 startActivity(intent);
             }
         });

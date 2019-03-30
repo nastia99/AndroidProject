@@ -25,7 +25,7 @@ public class ParametersActivity extends AppCompatActivity {
     private ContentResolver cResolver;
     //Window object, that will store a reference to the current window
     private Window window;
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,7 +109,7 @@ public class ParametersActivity extends AppCompatActivity {
 
             }
         });
-    }
+    }*/
 
 
     private void setupViewPager(ViewPager viewPager) {
