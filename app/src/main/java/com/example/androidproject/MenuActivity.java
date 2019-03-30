@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getApplicationContext(), MyWebViewActivity.class);
-                intent.putExtra("url", "https://git-iutinfo.unice.fr/mn707438/androidproject/blob/master/Règles.pdf");
+                intent.putExtra("url", "https://github.com/nastia99/AndroidProject/blob/master/options/rules.md");
                 startActivity(intent);
             }
         });

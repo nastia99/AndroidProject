@@ -27,4 +27,7 @@
 
     <string name="FR">Français</string>
     <string name="EN">English</string>
+
+    <string name="phraseFin_FR">Le quiz est terminé vous avez réalisé un score de :</string>
+    <string name="phraseFin_EN">The quiz is finished you have achieved a score of :</string>
 </resources>

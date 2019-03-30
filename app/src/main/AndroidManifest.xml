@@ -20,6 +20,7 @@
         <activity android:name=".ParametersActivity"></activity>
         <activity android:name=".QcmActivity"></activity>
         <activity android:name=".ScoreActivity"></activity>
+        <activity android:name=".CorrectionActivity"></activity>
     </application>
 
 </manifest>
