@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">androidProject</string>
+    <string name="radio_easy">Facile</string>
+    <string name="radio_medium">Moyen</string>
+    <string name="radio_hard">Difficile</string>
+
+
+    <string name="difficulty_FR">Difficulté</string>
+    <string name="difficulty_EN">Difficulty</string>
+    <string name="reglage_FR">Réglages</string>
+    <string name="reglage_EN">Settings</string>
+    <string name="music_FR">Musique</string>
+    <string name="music_EN">Music</string>
+    <string name="Luminosite_FR">Luminosité</string>
+    <string name="Luminosite_EN">Luminosity</string>
+    <string name="Theme_FR">Thème</string>
+    <string name="Theme_EN">Theme</string>
+
+    <string name="Theme1_FR">Thème 1</string>
+    <string name="Theme1_EN">Theme 1</string>
+
+    <string name="Theme2_FR">Thème 2</string>
+    <string name="Theme2_EN">Theme 2</string>
+
+    <string name="Langue_FR">Langue</string>
+    <string name="Langue_EN">Language</string>
+
+    <string name="FR">Français</string>
+    <string name="EN">English</string>
 </resources>

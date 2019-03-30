@@ -1,0 +1,101 @@
+[{
+    "question" : "Qui est le premier président de la 3ème République ?",
+    "propositions" : ["Adolphe Thiers","Manu","Jules Grévy","Albert Lebrun"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "En quelle année la statue de la Liberté a-t-elle été construite ?",
+    "propositions" : ["En 1882","En 1906","En 1902","En 1886"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Quel club a remporté la Ligue 1 en 2010 ?",
+    "propositions" : ["L'Olympique lyonnais","L'Olympique de Marseille","L'ASSE","L'OGC Nice"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "De quelle région le Pulenda est-il la spécialité ?",
+    "propositions" : ["Basque","PACA","Parisienne","Corse"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Quand se déroule le Mondial de l'automobile de Paris ?",
+    "propositions" : ["Du 3 au 13 octobre","Du 15 au 28 octobre","Du 1er au 16 octobre","Du 1er au 15 octobre"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Comment s'appelle le château du capitaine Haddock ?",
+    "propositions" : ["Château Moulinard","Château Moulinsart"," Château Meulisard","Château Molinard"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Comment est mort le célèbre humoriste Coluche ?",
+    "propositions" : ["Électrocuté dans sa baignoire","Dans un accident de moto","Dans un accident de voiture","Mort par suicide"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Qui est le fondateur de Nintendo ?",
+    "propositions" : ["Tatsumi Kimishima","François Hollande","Kabushiki Kaisha","Fusajiro Yamauchi"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Combien de symphonies Mozart a-t-il réalisées ?",
+    "propositions" : ["41","50","69","60"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Que signifie 'To nag' en anglais ?",
+    "propositions" : ["Nager","Tokyo","Gronder","Enerver"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Butyreux signifie :",
+    "propositions" : ["Normal","Epais","Obèse","Maigre"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Qu'est-ce que la peste blanche ?",
+    "propositions" : ["La peste noire en Orient","La tuberculose","La rage","Une maladie"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Le Sahara s'est formé il y a :",
+    "propositions" : ["Un an","1 000 000 millions d'années","1 500 000 millions d'années","7 000 000 millions d'années !"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Où ont eu lieu les J.O de 1968  ?",
+    "propositions" : ["A Varsovie","A Los Angeles","A Mexico","A Moscou"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Que signifie les initiales M&M ?",
+    "propositions" : ["Mars & Murries","Mattew & Michael","M&M's","Michael Amzalag & Mathias Augustyniak"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Quelle déformation physique Marilyn Monroe avait-elle ?",
+    "propositions" : ["Elle avait une jambe plus courte que l'autre","Elle avait un bras plus long que l'autre","Elle était sourde d'une oreille","Elle avait 6 orteils"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Toute les 14 secondes, l'équivalent ... ... . est rasé en forêt amazonienne",
+    "propositions" : ["Du musée du louvre","D'un vase rempli de jolies roses","D'un terrain de foot","D'un écran de cinéma"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "En France, les rails de chemin de fer sont écartés de ... m",
+    "propositions" : ["Environ 1. 5 m","Environ 1 m","Environ 0. 5 m","Environ 2.0 m"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Qui est le patriarche de Moscou actuel ?",
+    "propositions" : ["Cyrille de Moscou","François 1er","Alexis II","Poutine"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Par combien il faut multiplier votre pointure pour trouver la longueur de vos pieds ?",
+    "propositions" : ["0. 777","0. 666","0. 555","0.767"],
+    "responses" : [false,true,false,false]
+  }
+]

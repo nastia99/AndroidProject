@@ -1,0 +1,101 @@
+[{
+    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
+    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Qui est l'auteur de la fable 'Le corrbeau et le renard' ?",
+    "propositions" : ["Jean-Baptiste Rousseau","Pierre de Ronsard","Nicolas de Boileau","Jean de la Fontaine"],
+    "responses" : [false,false,false,true]
+  },
+  {
+  "question" : "Quelle est la formule chimique de la molécule d'eau ?",
+  "propositions" : ["CO2","H2O","CH4","O2"],
+  "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Comment appelle-t-on les animaux se nourissant et de végétaux et d'autres animaux ?",
+    "propositions" : ["Herbivore","Omnivore","Carnivore","Mixtor"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Je possède un jardin rectangulaire de 4 mètres sur 8. Quelle est la surface de mon jardin ?",
+    "propositions" : ["32 mètres cubes","12 mètres carrés","32 mètres carrés","  12 mètres cubes"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Complétez ce proverbe : 'C'est la goutte qui fait déborder...'",
+    "propositions" : ["La coupe","Le vase","Ma colère","Le seau"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Quel sport est connu pour son ballon ovale ?",
+    "propositions" : ["Le football","Le handball","Le basketball","Le rugby"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Comment dit-on 'Bienvenue' en anglais ?",
+    "propositions" : ["Welcome","Bienvenido"," Hello","D la réponse D"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Quel est le nom de l'agence spatiale américaine ?",
+    "propositions" : ["La Lufthansa","La NASA","La Mir","La CIA"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "La Vespa créé en 1946, est un célèbre...",
+    "propositions" : ["Voiture","Avion","Scooter","Fusée"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : " Quel était le prénom du peintre Van Gogh ?",
+    "propositions" : [" Vincent","Paul","Christian","Lucas"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Pour quoi l'hypocondriaque se fait-il du souci ?",
+    "propositions" : ["Le rendu de pt","La famille","L'argent","La santé"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Dans quel pays peut-on trouver la Catalogne, l’Andalousie et la Castille ?",
+    "propositions" : ["L'Italie","L'Espagne","La Grèce","Le Portugal"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "A qui doit-on la chanson 'Don't stop me now' ?",
+    "propositions" : ["Queen","Beatles","Sting","Rihanna"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Quel pays a remporté la coupe du monde de football en 2014 ?",
+    "propositions" : ["La France","Le Brésil","L'Allemagne","L'Italie"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Et pourtant elle tourne ! de quoi parle Galilée ?",
+    "propositions" : ["Mars","La Terre","La Lune","D la réponse T"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Quel est l'organe respiratoire des poissons ?",
+    "propositions" : ["Les poumons","L'estomac","Le tuba","Les branchies"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Qui était le dieu de la guerre dans la mythologie grecque ?",
+    "propositions" : ["Arès","Apollon","Hermès","Hadès"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Comment s'écrit le nombre 19 en chiffres romains ?",
+    "propositions" : ["IXX","VIV","XIX","XXI"],
+    "responses" : [false,false,true,false]
+  },
+  {
+    "question" : "Que vaut le nombre Pie ?",
+    "propositions" : ["3,15","3,14","3,13","3,16"],
+    "responses" : [false,true,false,false]
+  }
+]
