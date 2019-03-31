@@ -7,27 +7,11 @@
     android:background="@drawable/gradient_bg"
     tools:context=".FragOptions">
 
-    <Button
-        android:id="@+id/diff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="200dp"
-        android:text="@string/difficulty_FR" />
-
-    <Button
-        android:id="@+id/reglage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_toRightOf="@+id/diff"
-        android:text="@string/reglage_FR" />
-
     <TextView
+        android:layout_marginTop="100dp"
         android:id="@+id/tMusique"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/reglage"
         android:layout_centerHorizontal="true"
         android:fontFamily="casual"
         android:text="@string/music_FR"

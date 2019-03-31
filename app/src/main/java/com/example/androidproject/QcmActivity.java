@@ -3,6 +3,7 @@ package com.example.androidproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -24,13 +25,71 @@ public class QcmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qcm_layout);
         listQ = QuestionList.getInstance();
+        listQ.construireListe(getApplicationContext());
         isAnswerCorrect = new boolean[listQ.size()];
         question = (TextView)findViewById(R.id.question);
+
+        addEditListener();
+        setQuestionView();
+        changeActivity();
+    }
+
+    public void addEditListener(){
+
         response1 = (Button)findViewById(R.id.response1);
         response2 = (Button) findViewById(R.id.response2);
         response3 = (Button) findViewById(R.id.response3);
         response4 = (Button) findViewById(R.id.response4);
+
+        response1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                response2.setClickable(false);
+                response3.setClickable(false);
+                response4.setClickable(false);
+                terminer();
+            }
+        });
+        response2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                response1.setClickable(false);
+                response3.setClickable(false);
+                response4.setClickable(false);
+                terminer();
+            }
+        });
+        response3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                response1.setClickable(false);
+                response2.setClickable(false);
+                response4.setClickable(false);
+                terminer();
+            }
+        });
+        response4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                response1.setClickable(false);
+                response2.setClickable(false);
+                response3.setClickable(false);
+                terminer();
+            }
+        });
+
+    }
+
+    private void reset(){
+        response1.setClickable(true);
+        response2.setClickable(true);
+        response3.setClickable(true);
+        response4.setClickable(true);
         setQuestionView();
+    }
+
+    private void terminer(){
+        checkAnswers();
         changeActivity();
     }
 
@@ -62,14 +121,13 @@ public class QcmActivity extends AppCompatActivity {
         }
         else {
             // System.out.println("MAUVAISE REPONSE");
-            isAnswerCorrect[idQ -1 ]= false;
+            isAnswerCorrect[idQ -1 ] = false;
         }
     }
 
     public void changeActivity() {
-        checkAnswers();
-        if(idQ < listQ.size()){ // il reste encore des questions à afficher
-            setQuestionView();
+        if(idQ < listQ.size()){ // il reste encore des questions à afficher --> relancer
+            reset();
         }
         else { // toutes les questions
             //System.out.println("POINTS : " + points + "/" +listQ.size());

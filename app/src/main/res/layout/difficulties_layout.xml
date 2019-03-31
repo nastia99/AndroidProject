@@ -20,7 +20,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_easy"
-            android:translationX="33dp" />
+            android:translationX="50dp" />
 
         <RadioButton
             android:id="@+id/radioMedium"
@@ -29,7 +29,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_medium"
-            android:translationX="33dp" />
+            android:translationX="50dp" />
 
         <RadioButton
             android:id="@+id/radioHard"
@@ -38,7 +38,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_hard"
-            android:translationX="33dp" />
+            android:translationX="50dp" />
 
     </RadioGroup>
 
