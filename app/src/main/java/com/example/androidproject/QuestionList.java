@@ -54,7 +54,7 @@ public class QuestionList {
     private String getJSONFromAsset(Context context) {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("code.json");
+            InputStream is = context.getAssets().open("easy.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -84,7 +84,7 @@ public class QuestionList {
             responsesList.add(reponses.getBoolean(i));
         }
 
-        Question q = new Question(question,propositionsList,responsesList);
+        Question q = new Question(question, propositionsList, responsesList);
 
         return q;
     }

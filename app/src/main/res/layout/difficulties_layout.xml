@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diffLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/gradient_bg"
     tools:context=".FragDifficulties">
 
@@ -19,7 +20,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_easy"
-            android:translationX="33dp"/>
+            android:translationX="33dp" />
 
         <RadioButton
             android:id="@+id/radioMedium"
@@ -28,7 +29,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_medium"
-            android:translationX="33dp"/>
+            android:translationX="33dp" />
 
         <RadioButton
             android:id="@+id/radioHard"
@@ -37,7 +38,7 @@
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="@string/radio_hard"
-            android:translationX="33dp"/>
+            android:translationX="33dp" />
 
     </RadioGroup>
 

@@ -2,6 +2,7 @@ package com.example.androidproject;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -25,11 +26,11 @@ public class ParametersActivity extends AppCompatActivity {
     private ContentResolver cResolver;
     //Window object, that will store a reference to the current window
     private Window window;
-/*
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_layout);
+        setContentView(R.layout.parameters_layout);
         Log.d(TAG, "onCreate: Starting.");
         mSectionsPageAdapter = new SectionsParametersAdapter(getSupportFragmentManager());
         // Set up the ViewPager with the sections adapter.
@@ -38,7 +39,7 @@ public class ParametersActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-
+/*
         //Instantiate seekbar object
         seekBar = (SeekBar) findViewById(R.id.seekLumi);
 
@@ -109,8 +110,8 @@ public class ParametersActivity extends AppCompatActivity {
 
             }
         });
-    }*/
-
+        */
+    }
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsParametersAdapter adapter = new SectionsParametersAdapter(getSupportFragmentManager());
