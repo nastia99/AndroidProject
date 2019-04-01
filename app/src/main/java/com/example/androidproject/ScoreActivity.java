@@ -1,8 +1,11 @@
 package com.example.androidproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +27,24 @@ public class ScoreActivity extends AppCompatActivity {
             int points = extras.getInt("POINTS");
             int total = extras.getInt("TOTAL");
             showScore(points, total);
+        }
+
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.scoreLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
+        }
+    }
+
+    @Override
+    protected void onResume () {
+        super.onResume();
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.scoreLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
         }
     }
 

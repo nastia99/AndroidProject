@@ -1,7 +1,10 @@
 package com.example.androidproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -29,9 +32,27 @@ public class QcmActivity extends AppCompatActivity {
         isAnswerCorrect = new boolean[listQ.size()];
         question = (TextView)findViewById(R.id.question);
 
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
+        }
+
         addEditListener();
         setQuestionView();
         changeActivity();
+    }
+
+    @Override
+    protected void onResume () {
+        super.onResume();
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
+        }
     }
 
     public void addEditListener(){

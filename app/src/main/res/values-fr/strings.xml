@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">androidProject</string>
+
+    <string name="radio_easy">Facile</string>
+    <string name="radio_medium">Moyen</string>
+    <string name="radio_hard">Difficile</string>
+    <string name="difficulty" tools:ignore="ExtraTranslation">Difficulté</string>
+    <string name="reglage" tools:ignore="ExtraTranslation">Réglages</string>
+    <string name="music" tools:ignore="ExtraTranslation">Musique</string>
+    <string name="Luminosite" tools:ignore="ExtraTranslation">Luminosité</string>
+    <string name="Langue" tools:ignore="ExtraTranslation">Langue</string>
+    <string name="Theme" tools:ignore="ExtraTranslation">Theme</string>
+    <string name="Theme1" tools:ignore="ExtraTranslation">Theme 1</string>
+    <string name="Theme2" tools:ignore="ExtraTranslation">Theme 2</string>
+    <string name="languageFR" tools:ignore="ExtraTranslation" translatable="false">Français</string>
+    <string name="languageEN" tools:ignore="ExtraTranslation" translatable="false">English</string>
+    <string name="play" tools:ignore="ExtraTranslation">Jouer</string>
+    <string name="open" tools:ignore="ExtraTranslation">Ouvrir les règles</string>
+    <string name="param" tools:ignore="ExtraTranslation">Paramètres</string>
+    <string name="phraseFin" tools:ignore="ExtraTranslation">Le quiz est terminé vous avez réalisé un score de :</string>
+</resources>

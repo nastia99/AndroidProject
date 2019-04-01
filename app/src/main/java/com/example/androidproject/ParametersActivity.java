@@ -42,7 +42,6 @@ public class ParametersActivity extends AppCompatActivity {
         SectionsParametersAdapter adapter = new SectionsParametersAdapter(getSupportFragmentManager());
         adapter.addFragment(new FragDifficulties(), "Difficulté");
         adapter.addFragment(new FragOptions(), "Options");
-
         viewPager.setAdapter(adapter);
     }
 
