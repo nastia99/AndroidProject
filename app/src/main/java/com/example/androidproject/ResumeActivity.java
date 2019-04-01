@@ -37,13 +37,13 @@ public class ResumeActivity extends AppCompatActivity {
         Question q = QuestionList.getInstance().get(idQ);
         question.setText(q.getQuestion());
         response1.setText(q.getPropositions().get(0));
-        if(q.getCorrectAnswers().get(0)) response1.setTextColor(Color.GREEN);
+        if(q.getCorrectAnswers().get(0)) response1.setBackgroundColor(Color.GREEN);
         response2.setText(q.getPropositions().get(1));
-        if(q.getCorrectAnswers().get(1)) response2.setTextColor(Color.GREEN);
+        if(q.getCorrectAnswers().get(1)) response2.setBackgroundColor(Color.GREEN);
         response3.setText(q.getPropositions().get(2));
-        if(q.getCorrectAnswers().get(2)) response3.setTextColor(Color.GREEN);
+        if(q.getCorrectAnswers().get(2)) response3.setBackgroundColor(Color.GREEN);
         response4.setText(q.getPropositions().get(3));
-        if(q.getCorrectAnswers().get(3)) response4.setTextColor(Color.GREEN);
+        if(q.getCorrectAnswers().get(3)) response4.setBackgroundColor(Color.GREEN);
     }
 
 }

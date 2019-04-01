@@ -111,9 +111,9 @@ public class FragOptions extends Fragment {
                 }
                 //Calculate the brightness percentage
                 float perc = (brightness /(float)255)*100;
-
             }
         });
         return view;
     }
+
 }

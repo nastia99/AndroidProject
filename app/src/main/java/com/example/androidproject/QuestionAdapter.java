@@ -1,6 +1,7 @@
 package com.example.androidproject;
 
 import android.content.Context;
+import android.database.DataSetObserver;
 import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class QuestionAdapter {
+public class QuestionAdapter implements ListAdapter {
 
     private QuestionList mListP;
 
@@ -28,6 +29,16 @@ public class QuestionAdapter {
         mInflater = LayoutInflater.from(mContext);
     }
 
+    @Override
+    public void registerDataSetObserver(DataSetObserver observer) {
+
+    }
+
+    @Override
+    public void unregisterDataSetObserver(DataSetObserver observer) {
+
+    }
+
     public int getCount() {
         return mListP.size();
     }
@@ -38,6 +49,11 @@ public class QuestionAdapter {
 
     public long getItemId(int position) {
         return position;
+    }
+
+    @Override
+    public boolean hasStableIds() {
+        return false;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -68,6 +84,21 @@ public class QuestionAdapter {
         return layoutItem;
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        return 0;
+    }
+
+    @Override
+    public int getViewTypeCount() {
+        return 1;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
     //abonnement pour click sur le nom...
     private ArrayList<QuestionAdapterListener> mListListener = new ArrayList<QuestionAdapterListener>();
     public void addListener(QuestionAdapterListener aListener) {
@@ -78,6 +109,16 @@ public class QuestionAdapter {
         for(int i = mListListener.size()-1; i >= 0; i--) {
             mListListener.get(i).onClickNom(item, position);
         }
+    }
+
+    @Override
+    public boolean areAllItemsEnabled() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled(int position) {
+        return false;
     }
 
     // Interface pour écouter les évènements sur le nom du diplome
