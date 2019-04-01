@@ -1,101 +1,101 @@
 [{
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "question" : "Qui était le Premier ministre britannique jusqu’à ce qu’il soit remplacé Theresa May ?",
+    "propositions" : ["Philipp Hammond","David Cameron","Boris Johnson","Georges Osborne"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Parmi les pays suivants, lequel est le plus peuplé ?",
+    "propositions" : ["L'Indonésie","L'Inde","Le Maroc","Le Yémen"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Quel président américain avait pour slogan “America is back” ?",
+    "propositions" : ["Kennedy","Carter","Reagan","Trump"],
     "responses" : [false,false,true,false]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "question" : "Quel écrivain britannique a inventé le personnage d’Hercule Poirot ?",
+    "propositions" : ["Enid Blyton","Arthur Conan Doyle","Charles Dickens","Agatha Christie"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Quelle ville surnomme-t-on « la ville éternelle » ?",
+    "propositions" : ["Rome","Londres","Paris","New York"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "De quelle origine était Alexandre le Grand ?",
+    "propositions" : ["Macédonienne","Spartiate","Romaine","Athénienne"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "On dit qu’une baleine …",
+    "propositions" : ["Piaule","Brait","Chante","Siffle"],
     "responses" : [false,false,true,false]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "question" : "Dans quel film Mel Gibson incarne-t-il William Wallace, Écossais en lutte contre le roi d’Angleterre ?",
+    "propositions" : ["Mad Max","Braveheart","The Patriot","Forrest Gump"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Qui est l’auteur de Madame Bovary ?",
+    "propositions" : ["Maupassant","Proust","Mirabeau","Flaubert"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Quelle entreprise de partage de vidéos, fondée en 2005, a été rachetée par Google en 2006 ?",
+    "propositions" : ["Dailymotion","Facebook","Youtube","Google+"],
     "responses" : [false,false,true,false]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "question" : "Quelle est la capitale du Canada ?",
+    "propositions" : ["Ottawa","Montréal","Toronto","Québec"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : "Pourquoi Rosa Parks est-elle célèbre ?",
+    "propositions" : ["Lutte contre les droits de la femme","Lutte contre l'Apartheid en Afrique du Sud","Révolutionnaire cubaine","Lutte contre la ségrégation raciale aux USA"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Quel mot d'origine italienne désigne une cantatrice célèbre ?",
+    "propositions" : ["Une drama","Une diva","Une castafiore","Une soprano"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Que signifie charivari ?",
+    "propositions" : ["Grand bruit, tumulte","Grand buffet","Histoire drôle, plaisanterie","Discours insensé"],
+    "responses" : [true,false,false,false]
+  },
+  {
+    "question" : " 'Comme d'habitude' est une des chansons les plus célèbres du XXe siècle, qui est le plus célèbre de ses interprètes ?",
+    "propositions" : ["Edith Piaf","Joe Dassin","Johnny Hallyday","Claude Fraçois"],
+    "responses" : [false,false,false,true]
+  },
+  {
+    "question" : "Comment nomme-t-on les dirigeants de l’Égypte antique ?",
+    "propositions" : ["Les Shahs","Les Pharaons","Les Stratèges","Les Augustes"],
+    "responses" : [false,true,false,false]
+  },
+  {
+    "question" : "Le Bon, la Brute, le Truand est un film de…",
+    "propositions" : ["Steven Spielberg","Jack Sparrow","Sergio Leone","Francis Ford Coppola"],
     "responses" : [false,false,true,false]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
+    "question" : "Quelle entreprise suscite l’ire des taxis en proposant des services de voitures avec chauffeur à la demande ?",
+    "propositions" : ["Uber","La RATP","Deliveroo","La NASA"],
+    "responses" : [true,false,false,false]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
+    "question" : "Dans quelle pièce appartient le vers « la valeur n‘attend pas le nombre des années » ?",
+    "propositions" : ["Andromaque","Cinna","Tartuffe","Le Cid"],
+    "responses" : [false,false,false,true]
   },
   {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
-    "responses" : [false,false,true,false]
-  },
-  {
-    "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "question" : "Quelle profession est concernée par le serment d’Hippocrate ?",
+    "propositions" : ["Avocat","Pharmacien","Médecin","Juge"],
     "responses" : [false,false,true,false]
   }
 ]

@@ -85,7 +85,6 @@ public class QuestionList {
         }
 
         Question q = new Question(question, propositionsList, responsesList);
-
         return q;
     }
 
