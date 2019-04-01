@@ -54,7 +54,17 @@ public class QuestionList {
     private String getJSONFromAsset(Context context) {
         String json = null;
         try {
-            InputStream is = context.getAssets().open("easy.json");
+            InputStream is = null;
+            if(MonAppli.difficulte.equalsIgnoreCase(context.getResources().getString(R.string.radio_easy))){
+                is = context.getAssets().open("easy.json");
+            }
+            else if(MonAppli.difficulte.equalsIgnoreCase(context.getResources().getString(R.string.radio_medium))){
+                is = context.getAssets().open("medium.json");
+            }
+            else /*if(diff.equalsIgnoreCase(context.getResources().getString(R.string.radio_hard)))*/{
+                is = context.getAssets().open("difficult.json");
+            }
+
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
