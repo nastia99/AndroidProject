@@ -6,6 +6,11 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+/**
+ * Class qui gère l'affichage de la webView
+ * L'utilisateur est redirigé vers une page de règle se situant sur un git
+ */
+
 public class MyWebViewActivity extends AppCompatActivity {
 
     private WebView webview;

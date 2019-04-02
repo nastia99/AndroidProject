@@ -1,9 +1,12 @@
 package com.example.androidproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +14,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Class relative à l'affichage du quiz
+ * Questions - Reponses
+ */
 
 public class QcmActivity extends AppCompatActivity {
 
@@ -34,6 +42,13 @@ public class QcmActivity extends AppCompatActivity {
         response2 = (Button) findViewById(R.id.response2);
         response3 = (Button) findViewById(R.id.response3);
         response4 = (Button) findViewById(R.id.response4);
+
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
+        }
 
         response1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +89,17 @@ public class QcmActivity extends AppCompatActivity {
         setQuestionView();
     }
 
+    @Override
+    protected void onResume () {
+        super.onResume();
+        // Get the color preference
+        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
+        String drawableName = sharedPref.getString("color", null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
+        }
+    }
+
     private void reset(){
         response1.setBackgroundResource(android.R.drawable.btn_default);
         response1.setClickable(true);
@@ -86,6 +112,7 @@ public class QcmActivity extends AppCompatActivity {
         setQuestionView();
     }
 
+    // methode qui verifie les reponses si le quiz est termine change d'activite
     private void terminer(){
         checkAnswers();
         response1.setClickable(false);
@@ -110,6 +137,8 @@ public class QcmActivity extends AppCompatActivity {
         idQ++;
     }
 
+    // methode qui permet de verifier si la reponse selectionnee est juste,
+    // si oui l'affiche en vert sinon en rouge
     public void checkAnswers(){
         List<Boolean> answers = new ArrayList<>();
         boolean but1 = response1.isClickable();
@@ -173,11 +202,11 @@ public class QcmActivity extends AppCompatActivity {
         if(idQ < listQ.size()){ // il reste encore des questions à afficher --> relancer
             reset();
         }
-        else { // toutes les questions
+        else { // toutes les questions ont ete affiche
             //System.out.println("POINTS : " + points + "/" +listQ.size());
             Intent intent = new Intent(getBaseContext(), ScoreActivity.class);
-            intent.putExtra("POINTS", points);
-            intent.putExtra("TOTAL",listQ.size());
+            intent.putExtra("POINTS", points); // on recupere le nombre de bonnes reponses
+            intent.putExtra("TOTAL",listQ.size()); // on recupere le total de questions
             startActivity(intent);
         }
     }

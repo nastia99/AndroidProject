@@ -11,6 +11,12 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class qui permet de creer une liste de questions à partir d'un fichier json
+ * recuperer le fichier selon la difficulte choisi ou par défaut
+ * et recuperer les informations du fichier
+ */
+
 public class QuestionList {
 
     private List<Question> listQuestions;
@@ -88,12 +94,12 @@ public class QuestionList {
         for(int i = 0 ; i< propositions.length();i++){
             propositionsList.add(propositions.getString(i));
         }
+        // reponses de la question (boolean)
         JSONArray reponses = jsonObject.getJSONArray("responses");
         List<Boolean> responsesList = new ArrayList<>();
         for(int i = 0 ; i< reponses.length();i++){
             responsesList.add(reponses.getBoolean(i));
         }
-
         Question q = new Question(question, propositionsList, responsesList);
         return q;
     }

@@ -21,6 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
@@ -28,6 +29,11 @@ import android.widget.SeekBar;
 import android.widget.Toast;
 
 import java.util.Locale;
+
+/**
+ * Fragment qui gère les options de l'application
+ * Luminosite - Theme - Langues - (Musique dans une prochaine évolution)
+ */
 
 public class FragOptions extends Fragment {
 
@@ -43,7 +49,6 @@ public class FragOptions extends Fragment {
     //Window object, that will store a reference to the current window
     private Window window;
 
-
     View view=null;
     View view2 =null;
 
@@ -51,7 +56,6 @@ public class FragOptions extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.options_layout,container,false);
-
         // Get the color preference
         SharedPreferences sharedPref = getActivity().getSharedPreferences("bgColorFile",getActivity().MODE_PRIVATE);
         String drawableName = sharedPref.getString("color", null);

@@ -13,6 +13,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Class qui affiche à l'utilisateur le score avec une animation et
+ * donne le choix à l'utilisateur de voir la correction
+ * ou bien retourner au menu
+ */
+
 public class ScoreActivity extends AppCompatActivity {
 
     private TextView score;
@@ -69,6 +75,7 @@ public class ScoreActivity extends AppCompatActivity {
         });
     }
 
+    // methode qui permet de recuperer les points et le total de question pour calculer le score grâce aux intent
     private void showScore(int points,int total){
         score = findViewById(R.id.score);
         String s = points + " sur " + total;

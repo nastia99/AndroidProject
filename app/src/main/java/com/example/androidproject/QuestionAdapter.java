@@ -12,6 +12,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * Class qui permet d'adapter l'affichage dasn une listView
+ * d'une question et ça bonne ou mauvaise réponse
+ */
+
 public class QuestionAdapter implements ListAdapter {
 
     private QuestionList mListP;
@@ -61,7 +66,7 @@ public class QuestionAdapter implements ListAdapter {
 
         //(1) : Réutilisation des layouts
         if (convertView == null) {
-            //Initialisation de notre item à partir du  layout XML ""
+            //Initialisation de notre item à partir du layout XML ""
             layoutItem = (ConstraintLayout) mInflater.inflate(R.layout.question_layout, parent, false);
         }
         else {
@@ -69,11 +74,11 @@ public class QuestionAdapter implements ListAdapter {
         }
 
         //(2) : Récupération des TextView de notre layout
-        TextView num = (TextView) layoutItem.findViewById(R.id.num);
+        TextView number = (TextView) layoutItem.findViewById(R.id.num);
         ImageView result = (ImageView) layoutItem.findViewById(R.id.result);
 
         //(3) : Renseignement des valeurs
-        num.setText((position+1)+".");
+        number.setText((position+1)+".");
         if(QcmActivity.isAnswerCorrect[position] == true){
             result.setImageResource(R.mipmap.smile);
         }
@@ -121,7 +126,7 @@ public class QuestionAdapter implements ListAdapter {
         return false;
     }
 
-    // Interface pour écouter les évènements sur le nom du diplome
+    // Interface pour écouter les évènements sur le
     public interface QuestionAdapterListener {
         public void onClickNom(Question item, int position);
     }

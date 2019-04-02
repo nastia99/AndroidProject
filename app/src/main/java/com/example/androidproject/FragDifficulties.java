@@ -12,6 +12,11 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+/**
+ * Fragment qui gère les difficultés de l'application
+ * Facile - Moyen - Difficile
+ */
+
 public class FragDifficulties extends Fragment {
 
     private static final String TAG = "FragDifficulties";

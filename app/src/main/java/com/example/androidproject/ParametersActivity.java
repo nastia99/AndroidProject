@@ -7,6 +7,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+/**
+ * Class qui gère les deux fragments et leur affichage
+ * Difficulté - Options
+ */
 
 public class ParametersActivity extends AppCompatActivity {
 

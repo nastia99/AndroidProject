@@ -1,15 +1,16 @@
 package com.example.androidproject;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+/**
+ * Class qui affiche à l'utilisateur ses bonnes et mauvaises réponses grâce à un smiley :) ou :(
+ */
 
 public class CorrectionActivity extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class CorrectionActivity extends AppCompatActivity {
         final ListView lv = (ListView) findViewById(R.id.listView);
         final QuestionList listQ = QuestionList.getInstance();
 
+        // utilisation d'un adapter pour afficher le numero et l'emoji associe selon la reponse dans une listview
         QuestionAdapter ad = new QuestionAdapter(this,listQ);
         lv.setAdapter((ListAdapter) ad);
     }

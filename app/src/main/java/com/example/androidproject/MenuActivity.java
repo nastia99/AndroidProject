@@ -10,6 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Class d'accueil qui permet à l'utilisateur de choisir entre 3 boutons
+ * Jouer - Parametres - Règles
+ */
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override

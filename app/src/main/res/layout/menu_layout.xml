@@ -8,11 +8,12 @@
     tools:context=".MenuActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100px"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:layout_marginTop="1px"
+        android:src="@mipmap/logo" />
 
     <Button
         android:id="@+id/playButton"

@@ -7,45 +7,18 @@
     android:background="@drawable/gradient_bg"
     tools:context=".FragOptions">
 
-    <TextView
-        android:layout_marginTop="100dp"
-        android:id="@+id/tMusique"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="casual"
-        android:text="@string/music_FR"
-        android:textColor="#000000"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:visibility="visible" />
-
-    <SeekBar
-        android:id="@+id/seekVolume"
-        android:layout_width="500px"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tMusique"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="-3dp"
-        android:paddingTop="19dp" />
-
-    <ToggleButton
-        android:id="@+id/toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tMusique"
-        android:layout_toRightOf="@+id/seekVolume" />
 
     <TextView
         android:id="@+id/tLuminosite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toggle"
         android:layout_centerHorizontal="true"
         android:fontFamily="casual"
         android:text="@string/Luminosite_FR"
         android:textColor="#000000"
         android:textSize="30dp"
+        android:layout_above="@id/seekLumi"
+        android:gravity="center_vertical"
         android:textStyle="bold"
         android:visibility="visible" />
 
@@ -53,15 +26,15 @@
         android:id="@+id/seekLumi"
         android:layout_width="500px"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tLuminosite"
+        android:layout_above="@id/tTheme"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/tTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekLumi"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:fontFamily="casual"
         android:text="@string/Theme_FR"
         android:textColor="#000000"
