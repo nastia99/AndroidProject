@@ -43,13 +43,5 @@ public class CorrectionActivity extends AppCompatActivity {
 
         QuestionAdapter ad = new QuestionAdapter(this,listQ);
         lv.setAdapter((ListAdapter) ad);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), ResumeActivity.class);
-                intent.putExtra("POSITION", i);
-                startActivity(intent);
-            }
-        });
     }
 }

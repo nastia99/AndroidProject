@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -15,12 +17,14 @@ public class ScoreActivity extends AppCompatActivity {
 
     private TextView score;
     private Button correction;
+    private Button menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.score_layout);
         correction = findViewById(R.id.correction);
+        menu = findViewById(R.id.menu);
         setListener();
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -52,8 +56,15 @@ public class ScoreActivity extends AppCompatActivity {
         correction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CorrectionActivity.class);
-                startActivity(intent);
+                Intent intentCorrection = new Intent(getApplicationContext(), CorrectionActivity.class);
+                startActivity(intentCorrection);
+            }
+        });
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMenu = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intentMenu);
             }
         });
     }
@@ -66,5 +77,7 @@ public class ScoreActivity extends AppCompatActivity {
             score.setTextColor(Color.GREEN);
         else
             score.setTextColor(Color.RED);
+        Animation zoom = AnimationUtils.loadAnimation(this,R.anim.zoom);
+        score.startAnimation(zoom);
     }
 }

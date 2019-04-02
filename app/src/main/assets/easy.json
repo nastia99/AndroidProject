@@ -1,10 +1,10 @@
 [{
     "question" : "Quel célèbre dictateur dirigea l'URSS dans le milieu des années 1920 - 1953 ?",
-    "propositions" : ["Trotski","Lénine","Stalinee","Molotov"],
+    "propositions" : ["Trotski","Lénine","Staline","Molotov"],
     "responses" : [false,false,true,false]
   },
   {
-    "question" : "Qui est l'auteur de la fable 'Le corrbeau et le renard' ?",
+    "question" : "Qui est l'auteur de la fable 'Le corbeau et le renard' ?",
     "propositions" : ["Jean-Baptiste Rousseau","Pierre de Ronsard","Nicolas de Boileau","Jean de la Fontaine"],
     "responses" : [false,false,false,true]
   },
@@ -14,7 +14,7 @@
   "responses" : [false,true,false,false]
   },
   {
-    "question" : "Comment appelle-t-on les animaux se nourissant et de végétaux et d'autres animaux ?",
+    "question" : "Comment appelle-t-on les animaux se nourissant de végétaux ?",
     "propositions" : ["Herbivore","Omnivore","Carnivore","Mixtor"],
     "responses" : [true,false,false,false]
   },
@@ -25,7 +25,7 @@
   },
   {
     "question" : "Complétez ce proverbe : 'C'est la goutte qui fait déborder...'",
-    "propositions" : ["La coupe","Le vase","Ma colère","Le seau"],
+    "propositions" : ["La coupe","Le vase","Ma colère","Le sceau"],
     "responses" : [false,true,false,false]
   },
   {

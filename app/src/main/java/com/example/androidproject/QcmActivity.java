@@ -1,10 +1,9 @@
 package com.example.androidproject;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Build;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.content.res.ResourcesCompat;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -31,32 +30,6 @@ public class QcmActivity extends AppCompatActivity {
         listQ.construireListe(getApplicationContext());
         isAnswerCorrect = new boolean[listQ.size()];
         question = (TextView)findViewById(R.id.question);
-
-        // Get the color preference
-        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
-        String drawableName = sharedPref.getString("color", null);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
-        }
-
-        addEditListener();
-        setQuestionView();
-        changeActivity();
-    }
-
-    @Override
-    protected void onResume () {
-        super.onResume();
-        // Get the color preference
-        SharedPreferences sharedPref = getSharedPreferences("bgColorFile",this.MODE_PRIVATE);
-        String drawableName = sharedPref.getString("color", null);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            findViewById(R.id.qcmLayout).setBackground(ResourcesCompat.getDrawable(getResources(), this.getResources().getIdentifier(drawableName, "drawable", this.getPackageName()), null));
-        }
-    }
-
-    public void addEditListener(){
-
         response1 = (Button)findViewById(R.id.response1);
         response2 = (Button) findViewById(R.id.response2);
         response3 = (Button) findViewById(R.id.response3);
@@ -98,51 +71,101 @@ public class QcmActivity extends AppCompatActivity {
                 terminer();
             }
         });
-
+        setQuestionView();
     }
 
     private void reset(){
+        response1.setBackgroundResource(android.R.drawable.btn_default);
         response1.setClickable(true);
+        response2.setBackgroundResource(android.R.drawable.btn_default);
         response2.setClickable(true);
+        response3.setBackgroundResource(android.R.drawable.btn_default);
         response3.setClickable(true);
+        response4.setBackgroundResource(android.R.drawable.btn_default);
         response4.setClickable(true);
         setQuestionView();
     }
 
     private void terminer(){
         checkAnswers();
-        changeActivity();
+        response1.setClickable(false);
+        response2.setClickable(false);
+        response3.setClickable(false);
+        response4.setClickable(false);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                changeActivity();
+            }
+        }, 1000);   //2 seconds
     }
 
     private void setQuestionView() {
         currentQ = listQ.get(idQ);
         question.setText(currentQ.getQuestion());
         response1.setText(currentQ.getPropositions().get(0));
-        response1.setClickable(false);
         response2.setText(currentQ.getPropositions().get(1));
-        response2.setClickable(false);
         response3.setText(currentQ.getPropositions().get(2));
-        response3.setClickable(false);
         response4.setText(currentQ.getPropositions().get(3));
-        response4.setClickable(false);
         idQ++;
     }
 
     public void checkAnswers(){
         List<Boolean> answers = new ArrayList<>();
-        answers.add(response1.isClickable());
-        answers.add(response2.isClickable());
-        answers.add(response3.isClickable());
-        answers.add(response4.isClickable());
+        boolean but1 = response1.isClickable();
+        boolean but2 = response2.isClickable();
+        boolean but3 = response3.isClickable();
+        boolean but4 = response4.isClickable();
+        answers.add(but1);
+        answers.add(but2);
+        answers.add(but3);
+        answers.add(but4);
 
         if(answers.equals(currentQ.getCorrectAnswers())){
-            //System.out.println("BONNE REPONSE");
+            //Correct answer
             isAnswerCorrect[idQ -1] = true;
             points++;
+            if(but1){
+                response1.setBackgroundColor(Color.GREEN);
+            }
+            else if(but2){
+                response2.setBackgroundColor(Color.GREEN);
+            }
+            else if (but3){
+                response3.setBackgroundColor(Color.GREEN);
+            }
+            else{
+                response4.setBackgroundColor(Color.GREEN);
+            }
         }
         else {
-            // System.out.println("MAUVAISE REPONSE");
-            isAnswerCorrect[idQ -1 ] = false;
+            //Incorrect
+            isAnswerCorrect[idQ -1 ]= false;
+            if(but1){
+                response1.setBackgroundColor(Color.RED);
+            }
+            else if(but2){
+                response2.setBackgroundColor(Color.RED);
+            }
+            else if (but3){
+                response3.setBackgroundColor(Color.RED);
+            }
+            else{
+                response4.setBackgroundColor(Color.RED);
+            }
+            List<Boolean> curr = currentQ.getCorrectAnswers();
+            if(curr.get(0)){
+                response1.setBackgroundColor(Color.GREEN);
+            }
+            else if(curr.get(1)){
+                response2.setBackgroundColor(Color.GREEN);
+            }
+            else if(curr.get(2)){
+                response3.setBackgroundColor(Color.GREEN);
+            }
+            else{
+                response4.setBackgroundColor(Color.GREEN);
+            }
         }
     }
 

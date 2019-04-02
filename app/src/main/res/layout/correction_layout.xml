@@ -8,8 +8,8 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="413dp"
-        android:layout_height="734dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:choiceMode="singleChoice"
         android:divider="#EF760B"
         android:dividerHeight="5px"

@@ -36,9 +36,9 @@ public class QuestionList {
     }
 
     public void construireListe(Context context){
+        listQuestions.clear();
         // Création de la liste des questions
         try {
-
             // Récupération du fichier json
             JSONArray jsonArray = new JSONArray(getJSONFromAsset(context));
 
