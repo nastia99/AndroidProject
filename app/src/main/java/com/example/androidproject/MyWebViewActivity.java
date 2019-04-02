@@ -20,6 +20,6 @@ public class MyWebViewActivity extends AppCompatActivity {
         WebSettings websettings= webview.getSettings();
         websettings.setJavaScriptEnabled(true);
         websettings.setPluginState(WebSettings.PluginState.ON);
-        webview.loadUrl("http://docs.google.com/gview?embedded=true&url="+url);
+        webview.loadUrl(url);
     }
 }
